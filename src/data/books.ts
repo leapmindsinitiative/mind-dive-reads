@@ -1,3 +1,5 @@
+import balancedChristianLifeCover from "@/assets/balanced-christian-life-cover.jpg";
+
 export interface Book {
   id: string;
   title: string;
@@ -15,7 +17,7 @@ export const books: Book[] = [
     title: "A Balanced Christian Life",
     author: "Watchman Nee",
     description: "A profound exploration of living a balanced spiritual life, covering essential principles for Christian growth and maturity.",
-    coverUrl: "",
+    coverUrl: balancedChristianLifeCover,
     pdfUrl: "https://drive.google.com/file/d/1mFnZrtJMh7zxntl9tkP--jEu88g1w9Mu/view",
     totalPages: 100,
     category: "Spirituality",

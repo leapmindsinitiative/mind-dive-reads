@@ -27,20 +27,30 @@ const BookCard = ({ book, index }: BookCardProps) => {
       style={{ animationDelay: `${index * 100}ms` }}
     >
       {/* Book Cover */}
-      <div className={`relative aspect-[3/4] w-full overflow-hidden bg-gradient-to-br ${gradient}`}>
-        <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
-          <div className="mb-4 h-px w-12 bg-white/30" />
-          <h3 className="font-heading text-lg font-semibold leading-tight text-white md:text-xl">
-            {book.title}
-          </h3>
-          <p className="mt-2 text-sm text-white/80">
-            {book.author}
-          </p>
-          <div className="mt-4 h-px w-12 bg-white/30" />
-        </div>
+      <div className="relative aspect-[3/4] w-full overflow-hidden">
+        {book.coverUrl ? (
+          <img 
+            src={book.coverUrl} 
+            alt={`Cover of ${book.title}`}
+            className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+        ) : (
+          <div className={`h-full w-full bg-gradient-to-br ${gradient}`}>
+            <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
+              <div className="mb-4 h-px w-12 bg-white/30" />
+              <h3 className="font-heading text-lg font-semibold leading-tight text-white md:text-xl">
+                {book.title}
+              </h3>
+              <p className="mt-2 text-sm text-white/80">
+                {book.author}
+              </p>
+              <div className="mt-4 h-px w-12 bg-white/30" />
+            </div>
+          </div>
+        )}
         
         {/* Category Badge */}
-        <span className="absolute left-3 top-3 rounded-full bg-white/20 px-3 py-1 text-xs font-medium text-white backdrop-blur-sm">
+        <span className="absolute left-3 top-3 rounded-full bg-black/40 px-3 py-1 text-xs font-medium text-white backdrop-blur-sm">
           {book.category}
         </span>
       </div>
