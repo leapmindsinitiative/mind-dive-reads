@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
-import { BookOpen, Moon, Sun } from "lucide-react";
+import { Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Button } from "./ui/button";
+import leapmindsLogo from "@/assets/leapminds-logo.png";
 
 const Header = () => {
   const [isDark, setIsDark] = useState(() => {
@@ -40,9 +41,11 @@ const Header = () => {
           to="/" 
           className="flex items-center gap-2.5 transition-opacity hover:opacity-80"
         >
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary">
-            <BookOpen className="h-5 w-5 text-primary-foreground" />
-          </div>
+          <img 
+            src={leapmindsLogo} 
+            alt="LeapMinds Logo" 
+            className="h-10 w-10 object-contain"
+          />
           <span className="font-heading text-xl font-semibold tracking-tight text-heading">
             LeapMinds Library
           </span>
