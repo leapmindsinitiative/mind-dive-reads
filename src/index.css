@@ -33,8 +33,12 @@
     --accent-foreground: 0 0% 100%;
 
     /* Alternative accent - Calm Teal */
-    --teal: 168 84% 29%; /* #0D9488 */
+    --teal: 168 84% 39%;
     --teal-foreground: 0 0% 100%;
+    
+    /* Warm accent */
+    --amber: 38 92% 50%;
+    --amber-foreground: 0 0% 100%;
 
     /* Text hierarchy */
     --heading: 220 43% 11%; /* #111827 */
