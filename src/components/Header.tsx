@@ -46,7 +46,7 @@ const Header = () => {
             alt="LeapMinds Logo" 
             className="h-10 w-10 object-contain"
           />
-          <span className="font-heading text-xl font-semibold tracking-tight text-heading">
+          <span className="font-heading text-base font-semibold tracking-tight text-heading md:text-xl">
             LeapMinds Library
           </span>
         </Link>
