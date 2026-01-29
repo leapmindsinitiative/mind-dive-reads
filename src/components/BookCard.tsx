@@ -60,7 +60,7 @@ const BookCard = ({ book, index }: BookCardProps) => {
         <h3 className="font-heading text-lg font-semibold text-heading line-clamp-2">
           {book.title}
         </h3>
-        <p className="mt-1 font-heading text-sm font-medium text-heading/80">
+        <p className="mt-1 font-heading text-sm font-medium text-indigo">
           {book.author}
         </p>
         <p className="mt-3 mb-4 flex-1 text-sm leading-relaxed text-body line-clamp-2">

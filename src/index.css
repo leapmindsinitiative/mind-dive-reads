@@ -39,6 +39,10 @@
     /* Warm accent */
     --amber: 38 92% 50%;
     --amber-foreground: 0 0% 100%;
+    
+    /* Indigo for author names */
+    --indigo: 239 84% 67%;
+    --indigo-foreground: 0 0% 100%;
 
     /* Text hierarchy */
     --heading: 220 43% 11%; /* #111827 */
